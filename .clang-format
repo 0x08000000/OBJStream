@@ -11,8 +11,8 @@
 ---
 AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
-AlignConsecutiveAssignments: false
-AlignConsecutiveDeclarations: false
+AlignConsecutiveAssignments: AcrossEmptyLines
+AlignConsecutiveDeclarations: AcrossEmptyLines
 AlignEscapedNewlines: Left
 AlignOperands: true
 AlignTrailingComments: false
@@ -31,12 +31,12 @@ BinPackParameters: true
 BraceWrapping:
   AfterClass: false
   AfterControlStatement: false
-  AfterEnum: false
   AfterFunction: true
   AfterNamespace: true
   AfterObjCDeclaration: false
-  AfterStruct: false
-  AfterUnion: false
+  AfterStruct: true
+  AfterUnion: true
+  AfterEnum: true
   AfterExternBlock: false
   BeforeCatch: false
   BeforeElse: false
@@ -760,4 +760,5 @@ SpacesInParentheses: false
 SpacesInSquareBrackets: false
 Standard: Cpp03
 TabWidth: 8
+AlignArrayOfStructures: Left
 UseTab: Always
